@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+textarea {
+    height: 90vh;
+    width: 80%;
+}
+
+.main {
+    padding: 10px;
+}
+
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    height: auto;
+    min-height: 100vh;
+    padding: 20px;
+    padding-left: 2%;
+}
+
+.sidebar h2 {
+    margin-top: 5px;
+}
+
+.effect-8 {
+    border: 1px solid #ccc; 
+    padding: 7px 14px 9px; 
+    transition: 0.4s;
+}
+
+.effect-8 ~ .focus-border:before,
+.effect-8 ~ .focus-border:after{content: ""; position: absolute; top: 0; left: 0; width: 0; height: 2px; background-color: #4caf50; transition: 0.3s;}
+.effect-8 ~ .focus-border:after{top: auto; bottom: 0; left: auto; right: 0;}
+.effect-8 ~ .focus-border i:before,
+.effect-8 ~ .focus-border i:after{content: ""; position: absolute; top: 0; left: 0; width: 2px; height: 0; background-color: #4caf50; transition: 0.4s;}
+.effect-8 ~ .focus-border i:after{left: auto; right: 0; top: auto; bottom: 0;}
+.effect-8:focus ~ .focus-border:before,
+.effect-8:focus ~ .focus-border:after{width: 100%; transition: 0.3s;}
+.effect-8:focus ~ .focus-border i:before,
+.effect-8:focus ~ .focus-border i:after{height: 100%; transition: 0.4s;}
